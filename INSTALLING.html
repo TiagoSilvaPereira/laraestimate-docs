@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Installing - LaraEstimate Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Installing";
+    var mkdocs_page_input_path = "INSTALLING.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> LaraEstimate Documentation</a>
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="REQUIREMENTS.html">Requirements</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="INSTALLING.html">Installing</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-create-a-new-database">1. Create a new Database</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-extract-the-code">2. Extract the Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-create-the-symbolic-link-for-files-storage">3. Create the Symbolic Link for files storage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-creating-the-database-tables-and-seeding-the-data">4. Creating the database tables and seeding the data</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-running-the-system">5. Running the System</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-default-logins">6. Default Logins</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="ABOUT_THE_CODE.html">About the Code</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="MIX.html">Compiling Assets with Mix</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="THEMING.html">Theming - Changing Colors</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="EMAIL.html">E-mail Settings</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="MORE_PRODUCTS.html">More Products</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="CONTACT.html">Contact Us</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">LaraEstimate Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Installing</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installing-running-the-system">Installing &amp; Running the System</h1>
+<p>It is super simple to run LaraEstimate. First, you need to check if all the <a href="REQUIREMENTS.html">requirements</a> are installed on your system. After it, follow these steps:</p>
+<h2 id="1-create-a-new-database">1. Create a new Database</h2>
+<p>Create a new MySQL Database. We recommend that you use utf8mb4 charset in your database (<a href="https://stackoverflow.com/questions/766809/whats-the-difference-between-utf8-general-ci-and-utf8-unicode-ci">See why here</a>). You can create it using the following command, or using your preferred database manager:</p>
+<p><code>CREATE DATABASE laraestimate CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</code></p>
+<h2 id="2-extract-the-code">2. Extract the Code</h2>
+<p>Extract the code in a directory of your preference. Then, navigate to the project folder using the terminal and install all the composer packages with the command below:</p>
+<pre><code>composer install
+</code></pre>
+
+<p>The composer packages installation can take a few minutes. After the installation, inside the project folder, find a file called:</p>
+<pre><code>.env.example
+</code></pre>
+
+<p>Copy all the .env.example file content to a new file called:</p>
+<pre><code>.env
+</code></pre>
+
+<p>Inside this new <strong>.env</strong> file, change the DATABASE section to use the database you have created in the first step:</p>
+<pre><code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laraestimate
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+</code></pre>
+
+<h2 id="3-create-the-symbolic-link-for-files-storage">3. Create the Symbolic Link for files storage</h2>
+<p>LaraEstimate uses the awesome package <a href="https://github.com/spatie/laravel-medialibrary">Laravel MediaLibrary</a> with the Public Disk configuration to save the uploaded files.</p>
+<p>To configure the Public Disk, access your LaraEstimate project folder from the terminal and run this command:</p>
+<pre><code>php artisan storage:link
+</code></pre>
+
+<p>After it, your LaraEstimate installation can make file and image uploads.</p>
+<h2 id="4-creating-the-database-tables-and-seeding-the-data">4. Creating the database tables and seeding the data</h2>
+<p>Now, inside your LaraEstimate project folder, you can run the commands to create the database tables and seed the test data. If you want to seed the system with all the <em>fake test data</em>, run the command below:</p>
+<pre><code>php artisan migrate --seed
+</code></pre>
+
+<p>Or, if you want a clean database, use this command:</p>
+<pre><code>php artisan migrate
+</code></pre>
+
+<p>And then, run the following command to create an <strong>Admin user (email: admin@admin.com, password: password)</strong> on your system:</p>
+<pre><code>php artisan db:seed --class=AdminUserTableSeeder
+</code></pre>
+
+<h2 id="5-running-the-system">5. Running the System</h2>
+<p>Inside your LaraEstimate project folder, execute this command to generete de <strong>APP_KEY</strong>:</p>
+<pre><code>php artisan key:generate
+</code></pre>
+
+<p>And this command to run a server in the http://localhost on the port 8000:</p>
+<pre><code>php artisan serve
+</code></pre>
+
+<p>And then, access <a href="http://localhost:8000">http://localhost:8000</a> to see LaraEstimate running.</p>
+<h2 id="6-default-logins">6. Default Logins</h2>
+<p>After seeding the system data, it will create this default login:</p>
+<p>Admin - email: admin@admin.com, password: password</p>
+<p>That's all, do the login and enjoy creating Estimates!</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ABOUT_THE_CODE.html" class="btn btn-neutral float-right" title="About the Code">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="REQUIREMENTS.html" class="btn btn-neutral" title="Requirements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="REQUIREMENTS.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="ABOUT_THE_CODE.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
