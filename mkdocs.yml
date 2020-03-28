@@ -1,0 +1,14 @@
+site_name: LaraEstimate Documentation
+plugins: []
+nav:
+    - Introduction: index.md
+    - Requirements: REQUIREMENTS.md
+    - 'Installing': INSTALLING.md
+    - 'About the Code': ABOUT_THE_CODE.md
+    - 'Compiling Assets with Mix': MIX.md
+    - 'Theming - Changing Colors': THEMING.md
+    - 'E-mail Settings': EMAIL.md
+    - 'More Products': MORE_PRODUCTS.md
+    - 'Contact Us': CONTACT.md
+theme: readthedocs
+use_directory_urls: false
