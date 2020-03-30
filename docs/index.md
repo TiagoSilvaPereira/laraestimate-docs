@@ -15,7 +15,7 @@ The system has the following features:
 - Allows changing the Estimate Currency, Decimal Separator, and Thousands Separator
 - Allows translating to other languages using [Laravel Localization System](https://laravel.com/docs/7.x/localization)
 
-If you want, you can see a live preview here: [Live Preview - LaraEstimate](https://laravel.com/docs/7.x/localization)
+If you want, you can see a live preview here: [Live Preview - LaraEstimate](https://laraestimate-preview.kingofcode.com.br/)
 
 LaraEstimate has an intuitive and beautiful interface for creating and presenting estimates...
 
