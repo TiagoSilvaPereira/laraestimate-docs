@@ -1,4 +1,4 @@
-## Compiling Assets with Laravel Mix
+# Compiling Assets with Laravel Mix
 
 All the CSS and JavaScript (including the VueJS components) inside the LaraEstimate system are compiled and versioned with Laravel Mix. To modify JavaScript or CSS (SASS), you need first to install:
 

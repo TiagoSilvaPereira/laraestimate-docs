@@ -10,5 +10,5 @@ nav:
     - 'E-mail Settings': EMAIL.md
     - 'More Products': MORE_PRODUCTS.md
     - 'Contact Us': CONTACT.md
-theme: readthedocs
+theme: material
 use_directory_urls: false
