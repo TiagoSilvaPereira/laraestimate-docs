@@ -8,7 +8,6 @@ nav:
     - 'Compiling Assets with Mix': MIX.md
     - 'Theming - Changing Colors': THEMING.md
     - 'E-mail Settings': EMAIL.md
-    - 'More Products': MORE_PRODUCTS.md
     - 'Contact Us': CONTACT.md
 theme: material
 use_directory_urls: false
